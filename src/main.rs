@@ -1,5 +1,4 @@
 use teloxide::prelude::*;
-use std::env;
 
 
 #[tokio::main]
