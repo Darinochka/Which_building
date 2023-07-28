@@ -2,7 +2,11 @@
 Telegram bot helps to find out which building the audience is in.
 
 # Docker
+Create .env file according to this example
 ```
-docker build -t which_buildings --build-arg TELOXIDE_TOKEN="<YOUR_TOKEN>" .
-docker run -d which_buildings
+TELOXIDE_TOKEN=<YOUR_TELEGRAM_BOT_TOKEN>
+```
+And run with docker-compose:
+```
+docker compose up -d
 ```
