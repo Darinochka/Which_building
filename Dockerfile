@@ -6,13 +6,11 @@ WORKDIR /which_building
 COPY ./Cargo.lock ./Cargo.lock
 COPY ./Cargo.toml ./Cargo.toml
 
-RUN cargo build --release
 RUN rm src/*.rs
 
 COPY ./src ./src
 
-RUN rm ./target/release/deps/which_building*
-RUN cargo install --path .
+RUN cargo build --release
 
 # our final base
 FROM rust:1.71.0
