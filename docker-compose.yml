@@ -1,0 +1,8 @@
+version: "3.0"
+
+services:
+    which_building:
+        build: .
+        restart: on-failure
+        environment:
+          - TELOXIDE_TOKEN
