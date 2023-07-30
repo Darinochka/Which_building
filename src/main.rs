@@ -19,6 +19,9 @@ async fn main() {
                         if academic.contains(&num) {
                             "Административный"
                         } 
+                        else if num >= 800 {
+                            "Небесный"
+                            }
                         else {
                             "Учебный"
                             }
