@@ -16,9 +16,12 @@ async fn main() {
             Some(text) => {
                 match text {
                     Ok(num) => {
-                        if academic.contains(&num) {
+                        if num >= 800  {
+                            "Небесный"
+                        }
+                        else if academic.contains(&num) {
                             "Административный"
-                        } 
+                            }
                         else {
                             "Учебный"
                             }
